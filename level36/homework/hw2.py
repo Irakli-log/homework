@@ -1,5 +1,5 @@
 def user(name):
-    print(f"გამარჯობა, {name}!")
+    print("გამარჯობა,", name)
 
 
 user_name = input("გთხოვთ შეიყვანე შენი სახელი: ")
