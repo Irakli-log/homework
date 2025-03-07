@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div with Image</title>
+    <style>
+        .image-container {
+            padding: 20px; /* 20px padding სურათის გარშემო */
+            margin: 10px; /* 10px margin div-ის გარშემო */
+            border: 3px solid black; /* 3px საზღვარი */
+            display: inline-block; /* ელემენტის inline-სტილი */
+            background-color: lightgray; /* ფონზე ფერი, რომ უფრო გამოირჩეოდეს */
+        }
+
+        .image-container img {
+            max-width: 100%; /* სურათი არ გადადის div-ის ზომებს */
+            height: auto; /* სურათის სიმაღლე ინარჩუნებს პროპორციებს */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://media.tenor.com/K2bnpusQYIMAAAAM/silly-cat.gif" alt="Placeholder Image">
+    </div>
+</body>
+</html>
