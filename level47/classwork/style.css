@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    border: 2px solid gray;
+    display: flex;
+    padding: 10px;
+    background-color: white;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.reverse-row {
+    flex-direction: row-reverse;
+}
+
+.reverse-column {
+    flex-direction: column-reverse;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+}
