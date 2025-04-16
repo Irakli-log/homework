@@ -1,0 +1,46 @@
+.tour-section {
+    border: 2px solid #333;      
+    width: 600px;              
+    height: 400px;                 
+
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); 
+    
+  
+    background-repeat: no-repeat;  
+   
+  
+    background-position: center center; 
+  
+  
+    background-size: cover;       
+    
+  
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .tour-section img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .tour-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tour-section button:hover {
+    background-color: #e6b800;
+  }
+  
