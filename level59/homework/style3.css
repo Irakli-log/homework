@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    background-color: #0f0f0f;
+    color: #ddd;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 48px;
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .leaf {
+    color: #6fbf4e;
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .loading-bar {
+    width: 300px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid #666;
+    cursor: pointer;
+  }
+  
+  .progress {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    transition: width 1.5s ease;
+  }
+  
+  
+  .loading-bar:hover .progress {
+    width: 100%;
+  }
+  
+  .loading-text {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  
+  .services {
+    margin-top: 20px;
+    color: #666;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  

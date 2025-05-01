@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0073b1;
+  }
+  
+  .logo span {
+    color: #fff;
+    background-color: #0073b1;
+    padding: 0 4px;
+    border-radius: 3px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .signin-btn {
+    border: 1px solid #0073b1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #0073b1;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px;
+  }
+  
+  .login-section {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .login-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #b24020;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .forgot-link {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #0073b1;
+    text-decoration: none;
+  }
+  
+  .signin-main-btn {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .divider span {
+    background: #fff;
+    padding: 0 10px;
+    color: #888;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  
+  .divider::after {
+    right: 0;
+  }
+  
+  .google-btn,
+  .join-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #666;
+    border-radius: 28px;
+    background-color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .illustration-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .illustration-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
