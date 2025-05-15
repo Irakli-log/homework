@@ -1,0 +1,94 @@
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+
+.middle-line {
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.middle-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transform: translateY(50%);
+  transition: background-color 0.3s;
+}
+
+
+.middle-line:hover::after {
+  background-color: black;
+}
+
+
+.middle-line.clicked::after {
+  background-color: red;
+}
+
+.multi-line {
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+.multi-line::before,
+.multi-line::after,
+.multi-line span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+
+.multi-line::before {
+  top: 0;
+}
+
+
+.multi-line::after {
+  bottom: 0;
+}
+
+
+.multi-line span::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.multi-line:hover::before,
+.multi-line:hover::after {
+  background-color: black;
+}
+
+
+.multi-line.clicked::before,
+.multi-line.clicked::after,
+.multi-line.clicked span::after {
+  background-color: blue;
+}
