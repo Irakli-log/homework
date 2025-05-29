@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 დივის განლაგება</title>
+
+  <style>
+    .main-box {
+      width: 900px;
+      height: 600px;
+      background-color: red;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .blue-box {
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+    }
+
+    .green-box {
+      width: 150px;
+      height: 150px;
+      background-color: green;
+      padding: 10px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+    .green-box p {
+      color: violet;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-box">
+    <div class="blue-box"></div>
+    <div class="blue-box"></div>
+    <div class="green-box">
+      <p>პარაგრაფი 1</p>
+      <p>პარაგრაფი 2</p>
+      <p>პარაგრაფი 3</p>
+      <p>პარაგრაფი 4</p>
+    </div>
+    <div class="blue-box"></div>
+    <div class="blue-box"></div>
+  </div>
+
+</body>
+</html>

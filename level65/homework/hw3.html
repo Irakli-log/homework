@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>პარაგრაფების სტილიზაცია</title>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .green-box {
+      width: 600px;
+      height: 400px;
+      background-color: green;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .green-box p {
+      color: blue;
+      border-top: 2px solid violet;
+      padding-top: 5px;
+      font-size: 18px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    .green-box p.special {
+      color: yellow;
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 2px wavy black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="green-box">
+    <p>პირველი პარაგრაფი</p>
+    <p>მეორე პარაგრაფი</p>
+    <p class="special">გამორჩეული მესამე პარაგრაფი</p>
+  </div>
+
+</body>
+</html>
