@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Summary</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #dfe9fc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      width: 320px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card-header {
+      background-color: #2f32f2;
+      padding: 30px 0;
+    }
+
+    .card-header img {
+      width: 100px;
+    }
+
+    .card-body {
+      padding: 30px 20px;
+    }
+
+    .card-body h2 {
+      font-size: 20px;
+      color: #1f2d4a;
+      margin-bottom: 10px;
+    }
+
+    .card-body p {
+      color: #6c7a93;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .plan-box {
+      background-color: #f5f7ff;
+      padding: 15px 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    .plan-box .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .plan-box img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .plan-box .plan-info {
+      text-align: left;
+    }
+
+    .plan-box .plan-info .title {
+      font-weight: 600;
+      color: #1f2d4a;
+    }
+
+    .plan-box .plan-info .price {
+      font-size: 13px;
+      color: #6c7a93;
+    }
+
+    .plan-box a {
+      font-size: 13px;
+      color: #3f51ff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background-color: #3f51ff;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 20px;
+      width: 100%;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #2f40f2;
+    }
+
+    .cancel {
+      margin-top: 20px;
+      color: #6c7a93;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .cancel:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <img src="https://img.icons8.com/color/96/000000/music.png" alt="Music Illustration"/>
+    </div>
+    <div class="card-body">
+      <h2>Order Summary</h2>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+      <div class="plan-box">
+        <div class="left">
+          <img src="https://img.icons8.com/ios-filled/50/000000/musical-notes.png" alt="Music Icon"/>
+          <div class="plan-info">
+            <div class="title">Annual Plan</div>
+            <div class="price">$59.99/year</div>
+          </div>
+        </div>
+        <a href="#">Change</a>
+      </div>
+
+      <button class="btn-primary">Proceed to Payment</button>
+      <div class="cancel">Cancel Order</div>
+    </div>
+  </div>
+</body>
+</html>

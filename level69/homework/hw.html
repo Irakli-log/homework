@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insights Banner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      background-color: #0b0b18;
+      padding: 3rem 2rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      background-color: #1a1a2e;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .text-content {
+      color: white;
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-content h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .text-content h2 span {
+      color: #aa6bff;
+    }
+
+    .text-content p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #c0c0c0;
+      margin-bottom: 2rem;
+    }
+
+    .stats {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: left;
+    }
+
+    .stat h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .stat span {
+      font-size: 0.75rem;
+      color: #999;
+    }
+
+    .image-content {
+      flex: 1;
+      background: linear-gradient(to top right, rgba(170,107,255,0.7), rgba(170,107,255,0.7)), url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .image-content {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="text-content">
+        <h2>Get <span>insights</span> that help your business grow.</h2>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        <div class="stats">
+          <div class="stat">
+            <h3>10k+</h3>
+            <span>COMPANIES</span>
+          </div>
+          <div class="stat">
+            <h3>314</h3>
+            <span>TEMPLATES</span>
+          </div>
+          <div class="stat">
+            <h3>12M+</h3>
+            <span>QUERIES</span>
+          </div>
+        </div>
+      </div>
+      <div class="image-content"></div>
+    </div>
+  </div>
+</body>
+</html>
