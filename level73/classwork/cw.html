@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Score Summary Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #f5f7ff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      display: flex;
+      border-radius: 20px;
+      overflow: hidden;
+      background: white;
+      max-width: 600px;
+    }
+
+    .result-section {
+      background: linear-gradient(to bottom, #4e21ca, #4631d4);
+      color: white;
+      padding: 40px;
+      width: 50%;
+      text-align: center;
+    }
+
+    .result-section h2 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .score-circle {
+      background: #4a23c3;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .score {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .out-of {
+      font-size: 14px;
+      color: #bbbaff;
+    }
+
+    .rating {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 13px;
+      color: #d6d5ff;
+    }
+
+    .summary-section {
+      width: 50%;
+      padding: 40px;
+      background: white;
+    }
+
+    .summary-section h3 {
+      margin-bottom: 20px;
+      color: #303b5a;
+    }
+
+    .summary-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .summary-item span:first-child {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .reaction {
+      background: #fff6f5;
+      color: #d66a6a;
+    }
+
+    .memory {
+      background: #fffbf0;
+      color: #f0b400;
+    }
+
+    .verbal {
+      background: #f2fbfa;
+      color: #44a595;
+    }
+
+    .visual {
+      background: #f3f3fd;
+      color: #4c5aff;
+    }
+
+    .continue-btn {
+      width: 100%;
+      background: #303b5a;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 30px;
+      margin-top: 20px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .continue-btn:hover {
+      background: #1e2b4f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="result-section">
+        <h2>Your Result</h2>
+        <div class="score-circle">
+          <div class="score">76</div>
+          <div class="out-of">of 100</div>
+        </div>
+        <div class="rating">Great</div>
+        <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="summary-section">
+        <h3>Summary</h3>
+        <div class="summary-item reaction">
+          <span>⚡ Reaction</span>
+          <span>80 / 100</span>
+        </div>
+        <div class="summary-item memory">
+          <span>💡 Memory</span>
+          <span>92 / 100</span>
+        </div>
+        <div class="summary-item verbal">
+          <span>🗣️ Verbal</span>
+          <span>61 / 100</span>
+        </div>
+        <div class="summary-item visual">
+          <span>👁️ Visual</span>
+          <span>73 / 100</span>
+        </div>
+        <button class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

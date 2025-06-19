@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f2eae2;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      max-width: 600px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    .card-content .category {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      color: #6c7289;
+      margin-bottom: 10px;
+    }
+
+    .card-content h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #1c232b;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #6c7289;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .price .new {
+      color: #3d8168;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .price .old {
+      color: #6c7289;
+      text-decoration: line-through;
+      font-size: 0.9rem;
+    }
+
+    .card-content button {
+      background-color: #3d8168;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-content button:hover {
+      background-color: #1a4032;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.n56K7EKfhM7sSLFqdSEMbwHaHc&pid=Api&P=0&h=220" alt="Gabrielle Perfume" />
+    <div class="card-content">
+      <span class="category">PERFUME</span>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
+      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price">
+        <span class="new">$149.99</span>
+        <span class="old">$169.99</span>
+      </di

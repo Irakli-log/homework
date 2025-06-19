@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ცენტრირებული გრიდი</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border: 3px solid red;
+    }
+
+    .grid-item {
+      width: 120px;
+      height: 120px;
+      background-color: green;
+      color: white;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item">ტექსტი 1</div>
+    <div class="grid-item">ტექსტი 2</div>
+    <div class="grid-item">ტექსტი 3</div>
+    <div class="grid-item">ტექსტი 4</div>
+    <div class="grid-item">ტექსტი 5</div>
+    <div class="grid-item">ტექსტი 6</div>
+    <div class="grid-item">ტექსტი 7</div>
+    <div class="grid-item">ტექსტი 8</div>
+    <div class="grid-item">ტექსტი 9</div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout with Swap</title>
+  <style>
+    .wrapper {
+      border: 3px solid red;
+      width: 400px;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .box {
+      background-color: green;
+      color: white;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .box-2 {
+      grid-column: 2 / 4;
+      grid-row: 3;       
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="box">1</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box box-2">2</div> 
+  </div>
+
+</body>
+</html>
