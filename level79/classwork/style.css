@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+
+.parent {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.child {
+  background-color: #4a90e2;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
