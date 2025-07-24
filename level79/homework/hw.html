@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>რესპონსიული Grid</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    .parent {
+      background-color: #4CAF50;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .child {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+  </div>
+
+</body>
+</html>
