@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ფოტოების განლაგება</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      width: 450px;
+    }
+
+    
+    @media (max-width: 999px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.XQ4sJwH6z2ciGVPzMpC4egHaE7?pid=Api&P=0&h=220" alt="ფოტო 1">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.6btTNptg0wJF1qrL4n5Q5AHaEt?pid=Api&P=0&h=220" alt="ფოტო 2">
+  </div>
+
+</body>
+</html>
